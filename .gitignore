@@ -4,6 +4,8 @@
 
 /web/.git
 ./web/.git
+./mobile/.git
+/mobile/.git
 
 *.git
 */.git
