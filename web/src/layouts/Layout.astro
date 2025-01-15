@@ -1,3 +1,11 @@
+---
+interface Props {
+	title?: string;
+}
+
+const { title = "Tomatoe 🍅" } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,9 +13,12 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Tomatoe 🍅</title>
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 	</head>
-	<body class="bg-[#15141d] text-white">
+	<body class="bg-[#15141d] text-white font-inter">
 		<slot />
 	</body>
 </html>
