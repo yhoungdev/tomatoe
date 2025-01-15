@@ -1,0 +1,6 @@
+Here is the flow.
+
+* Users sign in with their Google account ( Oauth )
+* After that, they would get a random 6 Digits connectiom code. ( just like how Youtube does, id you dont want to scan )
+* Now once you input that code on your TV it would authenticate it, and add the TV to your list of connecr devices 
+* Now you can click on the Tv from your list of connected devices to send a message

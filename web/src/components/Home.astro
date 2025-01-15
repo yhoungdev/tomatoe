@@ -1,21 +1,79 @@
-<div class="">
-    <div class="items-center flex mt-[2em] justify-center h-[80vh]">
-        <div class="w-[90%] lg:w-[600px] mx-auto text-center  ">
-            <h2 class="text-7xl animate-pulse ">🍅</h2>
+<div class="min-h-screen relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#15141d] to-[#1D0706] -z-10"></div>
+    <div class="absolute inset-0 opacity-10 bg-[url('/pattern.svg')] -z-10"></div>
 
-            <div class="flex w-fit px-4 py-1 mx-auto my-8 rounded-full border border-orange-300">
-                <small>Coming Soon 🥳🥳</small>
+    <!-- Navigation -->
+    <nav class="px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-3xl">🍅</span>
+                <span class="font-bold text-xl text-white">Tomatoe</span>
             </div>
-            <h1 class="text-3xl font-bold ">Why just watch your TV when you can talk to it? 🍅</h1>
-
-            <div class="flex items-center gap-2 justify-center ">
-                <p class="my-5">With Tomatoe, you can send messages over the network from your smartphone to your smart Android TV 📱➡📺. Whether it’s a heartfelt confession, an emergency snack alert, or your favorite meme, Tomatoe makes your TV the real MVP of communication. Say it loud, say it proud—your TV’s got your back!🎉</p>
-            </div>
-
-            <a href="https://github.com/yhoungdev/potatoe-squeezy" target="_blank" >
-                <button class="bg-[#B82100] rounded-md text-white px-4 py-2 w-[150px]">Get Start</button>
+            <a href="https://github.com/yhoungdev/potatoe-squeezy" 
+               target="_blank"
+               class="text-white/80 hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                </svg>
             </a>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="px-6 py-16">
+        <div class="max-w-7xl mx-auto text-center">
+            <!-- Hero Badge -->
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-[#B82100]/10 border border-[#B82100]/20 mb-8">
+                <span class="text-sm text-[#FF6B6B]">✨ Coming Soon</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                Transform Your TV Into A
+                <span class="text-[#FF6B6B]">Message Board</span>
+            </h1>
+
+            <!-- Description -->
+            <p class="text-lg text-white/70 max-w-2xl mx-auto mb-12">
+                Send messages from your smartphone to your Android TV instantly. Perfect for family announcements, 
+                surprise messages, or just for fun! 📱 ➡️ 📺
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://github.com/yhoungdev/tomatoe" 
+                   target="_blank"
+                   class="px-8 py-3 bg-[#B82100] hover:bg-[#A31D00] transition-colors rounded-lg font-medium text-white flex items-center gap-2">
+                    Get Started
+                    <span class="text-xl">→</span>
+                </a>
+                <button class="px-8 py-3 bg-white/10 hover:bg-white/20 transition-colors rounded-lg font-medium text-white">
+                    Watch Demo
+                </button>
+            </div>
+
+            <!-- Feature Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mt-24 text-left">
+                <div class="p-6 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
+                    <span class="text-3xl mb-4 block">🔐</span>
+                    <h3 class="text-xl font-semibold mb-2">Secure Connection</h3>
+                    <p class="text-white/70">Connect securely with your Google account and manage all your TV devices.</p>
+                </div>
+                
+                <div class="p-6 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
+                    <span class="text-3xl mb-4 block">🎯</span>
+                    <h3 class="text-xl font-semibold mb-2">Easy Pairing</h3>
+                    <p class="text-white/70">Use a simple 6-digit code to pair your devices. No complicated setup needed.</p>
+                </div>
+                
+                <div class="p-6 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
+                    <span class="text-3xl mb-4 block">📱</span>
+                    <h3 class="text-xl font-semibold mb-2">Cross Platform</h3>
+                    <p class="text-white/70">Works seamlessly across Android TV and any smartphone browser.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </div>
 
