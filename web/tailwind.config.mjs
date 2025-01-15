@@ -13,6 +13,9 @@ export default {
           900: "#1D0706",
         },
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],
