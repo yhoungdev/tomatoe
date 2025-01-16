@@ -1,7 +1,7 @@
 import { View , Text} from 'react-native'
 function IndexHomePage() {
     return (
-        <View style={''} className={'bg-red-700'}>
+        <View className={'hidden'}>
             <Text style={``}>Transform Your TV Into A Message Board</Text>
         </View>
     );
