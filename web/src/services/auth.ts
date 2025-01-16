@@ -9,7 +9,6 @@ interface AuthResponse {
 export const authService = {
   async googleSignIn(): Promise<AuthResponse> {
     try {
-      // Replace with your actual API endpoint
       const response = await defaultInstance.post<AuthResponse>("/auth/google");
       return response.data;
     } catch (error) {
@@ -20,7 +19,6 @@ export const authService = {
 
   async generateNewCode(): Promise<string> {
     try {
-      // Replace with your actual API endpoint
       const response = await defaultInstance.post<{ code: string }>(
         "/auth/new-code"
       );

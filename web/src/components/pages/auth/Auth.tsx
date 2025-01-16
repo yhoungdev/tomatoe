@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { COOKIE_NAME } from "../../constants";
-import { authService } from "../services/auth";
+import { COOKIE_NAME } from "../../../../constants";
+import { authService } from "../../../services/auth";
 
 export const Auth: React.FC = () => {
   const [code, setCode] = useState<string>("");
