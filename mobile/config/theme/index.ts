@@ -1,9 +1,7 @@
+import { COLOR } from "@/config/theme/color";
 
-import { COLOR} from "@/config/theme/color";
-
- const THEME_STYLE = {
-    COLOR
-}
-
+const THEME_STYLE = {
+	COLOR,
+};
 
 export default THEME_STYLE;
