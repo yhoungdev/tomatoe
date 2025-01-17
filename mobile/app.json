@@ -8,6 +8,7 @@
 		"scheme": "myapp",
 		"userInterfaceStyle": "automatic",
 		"newArchEnabled": true,
+		"main": "node_modules/expo-router/entry",
 		"ios": {
 			"supportsTablet": true
 		},
