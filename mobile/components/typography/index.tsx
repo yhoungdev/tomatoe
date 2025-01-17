@@ -1,8 +1,11 @@
-import React from "react";
+import React, { JSX } from "react";
 import { Text } from "react-native";
 
-function Typography(props) {
-	return <Text></Text>;
+interface ITypography {
+	children: JSX.Element;
+}
+function Typography({ children }: ITypography): JSX.Element {
+	return <Text>{children}</Text>;
 }
 
 export default Typography;

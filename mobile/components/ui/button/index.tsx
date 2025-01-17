@@ -1,16 +1,16 @@
-import React from "react";
-import { Text, TouchableOpacity } from "react-native";
+import React, { forwardRef } from "react";
+import { Text, Pressable } from "react-native";
 import styles from "./button";
 
 interface IButtonProps {
-	title: string;
-	onPress: () => void;
+	onPress?: () => void;
+	children?: React.ReactNode;
 }
 
-const PrimaryButton = ({ title, onPress }: IButtonProps) => (
-	<TouchableOpacity style={styles.button} onPress={onPress}>
-		<Text style={styles.buttonText}>{title}</Text>
-	</TouchableOpacity>
+const PrimaryButton = ({ children, onPress }: IButtonProps) => (
+	<Pressable style={styles.button} onPress={onPress}>
+		<Text style={styles.buttonText}>{children}</Text>
+	</Pressable>
 );
 
 export default PrimaryButton;

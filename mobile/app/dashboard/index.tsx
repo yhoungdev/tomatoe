@@ -8,8 +8,6 @@ import {
 	IBMPlexMono_500Medium,
 } from "@expo-google-fonts/ibm-plex-mono";
 import AppLoading from "expo-app-loading";
-import { Link } from "expo-router";
-import { useNavigation, useRouter } from "expo-router";
 
 const styles = StyleSheet.create({
 	textStyle: {
@@ -39,8 +37,6 @@ function IndexHomePage() {
 		IBMPlexMono_500Medium,
 	});
 
-	const router = useRouter();
-
 	if (!fontsLoaded) {
 		return <AppLoading />;
 	}
@@ -63,17 +59,9 @@ function IndexHomePage() {
 						justifyContent: "space-between",
 					}}
 				>
-					<Text style={styles.textStyle}>
-						Transform your TV into a chatty superstar!
-					</Text>
+					<Text style={styles.textStyle}>Connect your TV with your Mobile</Text>
 
-					<PrimaryButton
-						onPress={() => {
-							router.push("/dashboard");
-						}}
-					>
-						Continue with Google.
-					</PrimaryButton>
+					<PrimaryButton>Connect TV</PrimaryButton>
 				</View>
 			</View>
 		</ContainerLayout>
