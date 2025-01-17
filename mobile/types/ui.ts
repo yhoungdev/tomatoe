@@ -1,4 +1,4 @@
-export interface  IButton {
-    children?: unknown,
-    onClick?: () => void,
+export interface IButton {
+	children?: unknown;
+	onClick?: () => void;
 }
