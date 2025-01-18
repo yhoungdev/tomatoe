@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import ContainerLayout from "@/layouts/containerLayout";
 import PrimaryButton from "@/components/ui/button";
-import { TelevisionSvg } from "@/components/assets";
 import {
 	useFonts,
 	IBMPlexMono_500Medium,
@@ -10,6 +9,7 @@ import {
 import AppLoading from "expo-app-loading";
 import { Link } from "expo-router";
 import { useNavigation, useRouter } from "expo-router";
+import { SignInWithGoogleIcon, TelevisionSvg } from "@/components/assets";
 
 const styles = StyleSheet.create({
 	textStyle: {
@@ -31,6 +31,10 @@ const styles = StyleSheet.create({
 		flex: 1,
 		justifyContent: "space-between",
 		paddingVertical: 20,
+	},
+	childText: {
+		fontSize: 14,
+		color: "white",
 	},
 });
 
@@ -72,7 +76,16 @@ function IndexHomePage() {
 							router.push("/dashboard");
 						}}
 					>
-						Continue with Google.
+						<View
+							style={{
+								flexDirection: "row",
+								gap: 4,
+								alignItems: "center",
+							}}
+						>
+							<SignInWithGoogleIcon />
+							<Text style={styles.childText}>Continue with Google.</Text>
+						</View>
 					</PrimaryButton>
 				</View>
 			</View>
