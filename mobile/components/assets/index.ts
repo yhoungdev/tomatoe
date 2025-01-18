@@ -1,3 +1,6 @@
 import TelevisionSvg from "@/components/assets/televisionSvg";
-
-export { TelevisionSvg };
+import {
+	SignInWithGoogleIcon,
+	TvButtonIcon,
+} from "@/components/assets/microSvgs";
+export { TelevisionSvg, TvButtonIcon, SignInWithGoogleIcon };

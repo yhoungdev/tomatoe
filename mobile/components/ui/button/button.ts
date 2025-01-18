@@ -4,7 +4,7 @@ import THEME_STYLE from "@/config/theme";
 const styles = StyleSheet.create({
 	button: {
 		backgroundColor: THEME_STYLE.COLOR.primary.tomato,
-		padding: 13,
+		padding: 18,
 		paddingTop: 12,
 		borderRadius: 50,
 		alignItems: "center",
