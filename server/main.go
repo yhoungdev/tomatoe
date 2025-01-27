@@ -7,14 +7,14 @@ import (
 
 func main() {
 	app := fiber.New(fiber.Config{
-		AppName:       " Tomato Server",
+		AppName:       "Tomato Server",
 		CaseSensitive: false,
 	})
 
-	controller.GoogleOAuth()
+	controller.GoogleOAuth(app)
 
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Tomatoe api up and running 🍅")
+		return c.SendString("Tomato API up and running 🍅")
 	})
 
 	app.Listen(":3000")
