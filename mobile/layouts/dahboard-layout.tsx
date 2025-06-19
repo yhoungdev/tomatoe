@@ -1,5 +1,6 @@
 import { SafeAreaView, StyleSheet, View } from "react-native";
 import AuthenticatedProfilePanel from "@/components/profile/authenticatedProfilePanel";
+import ContainerLayout from "@/layouts/containerLayout";
 
 export default function DashboardLayout({
 	children,
@@ -8,8 +9,12 @@ export default function DashboardLayout({
 }) {
 	return (
 		<SafeAreaView style={styles.container}>
-			<AuthenticatedProfilePanel />
-			<View>{children}</View>
+			<ContainerLayout>
+				<View>
+					<AuthenticatedProfilePanel />
+					<View>{children}</View>
+				</View>
+			</ContainerLayout>
 		</SafeAreaView>
 	);
 }
