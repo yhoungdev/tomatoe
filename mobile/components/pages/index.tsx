@@ -84,7 +84,7 @@ function IndexHomePage() {
 							}}
 						>
 							<SignInWithGoogleIcon />
-							<Text style={styles.childText}>Continue with Google.</Text>
+							<Text style={styles.childText}>Connect TV</Text>
 						</View>
 					</PrimaryButton>
 				</View>

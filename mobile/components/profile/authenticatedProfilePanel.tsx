@@ -17,7 +17,6 @@ const styleContainer = {
 		backgroundColor: THEME_STYLE.COLOR.primary.tomato,
 	},
 	parent: {
-		flex: 1,
 		flexDirection: "row",
 		justifyContent: "space-between",
 	},

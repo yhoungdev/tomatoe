@@ -1,11 +1,12 @@
 import { View, Text } from "react-native";
 import DashboardLayout from "@/layouts/dahboard-layout";
-import NoTVFound from "@/components/module/fallbacks/no-tv-connected";
 
-export default function HomeTab() {
+export default function SettingsTab() {
 	return (
 		<DashboardLayout>
-			<NoTVFound />
+			<View>
+				<Text>Settings.</Text>
+			</View>
 		</DashboardLayout>
 	);
 }

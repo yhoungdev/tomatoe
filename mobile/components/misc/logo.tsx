@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 
 const styles = {
 	emoji: {
-		fontSize: 20,
+		fontSize: 30,
 	},
 };
 
